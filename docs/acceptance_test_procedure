@@ -1,0 +1,362 @@
+# Acceptance Test Procedure (ATP)
+
+## Purpose
+
+This document defines the Acceptance Test Procedure (ATP) for PX4-based aircraft developed under this project.
+
+The purpose of the ATP is to verify that every aircraft meets the minimum operational, safety, and performance requirements before being released for customer use, internal deployment, or field testing.
+
+An aircraft shall not be considered accepted until all required tests have passed.
+
+---
+
+# Aircraft Information
+
+**Aircraft:** _______________________
+
+**Hardware Revision:** _______________
+
+**Serial Number:** ___________________
+
+**PX4 Firmware:** ____________________
+
+**Parameter File:** __________________
+
+**Battery Used:** ____________________
+
+**Technician:** ______________________
+
+**Date:** ____________________________
+
+---
+
+# Test Environment
+
+Location:
+
+---
+
+Weather:
+
+---
+
+Wind:
+
+---
+
+Temperature:
+
+---
+
+GNSS Constellations Available:
+
+☐ GPS
+
+☐ GLONASS
+
+☐ Galileo
+
+☐ BeiDou
+
+---
+
+# 1. Pre-Flight Inspection
+
+| Item                                | Pass |
+| ----------------------------------- | ---- |
+| Mechanical inspection completed     | ☐    |
+| Fasteners secure                    | ☐    |
+| Wiring secure                       | ☐    |
+| Propellers undamaged                | ☐    |
+| Battery secured                     | ☐    |
+| Flight controller mounted correctly | ☐    |
+| GPS securely mounted                | ☐    |
+| Payload secure                      | ☐    |
+
+---
+
+# 2. Power-On Verification
+
+| Test                    | Pass |
+| ----------------------- | ---- |
+| PX4 boots successfully  | ☐    |
+| No critical errors      | ☐    |
+| Battery voltage correct | ☐    |
+| Telemetry connected     | ☐    |
+| RC connected            | ☐    |
+| Sensors healthy         | ☐    |
+
+---
+
+# 3. GPS Performance
+
+| Requirement       | Result |
+| ----------------- | ------ |
+| GPS acquires fix  | ______ |
+| HDOP acceptable   | ______ |
+| Home position set | ☐      |
+| Heading stable    | ☐      |
+
+Notes:
+
+---
+
+---
+
+# 4. Control Verification
+
+Verify:
+
+☐ Roll
+
+☐ Pitch
+
+☐ Yaw
+
+☐ Throttle
+
+☐ Flight mode switching
+
+☐ Arm / Disarm
+
+☐ Kill switch (if installed)
+
+---
+
+# 5. Hover Test
+
+Hover Duration:
+
+---
+
+Acceptance Criteria
+
+☐ Stable hover
+
+☐ Minimal oscillation
+
+☐ No abnormal vibration
+
+☐ No unexpected estimator warnings
+
+☐ Pilot confidence acceptable
+
+Notes:
+
+---
+
+---
+
+# 6. Position Hold
+
+Acceptance Criteria
+
+☐ Position maintained
+
+☐ No toilet bowling
+
+☐ Stable altitude
+
+☐ Stable heading
+
+Notes:
+
+---
+
+---
+
+# 7. Flight Performance
+
+| Test               | Pass |
+| ------------------ | ---- |
+| Forward flight     | ☐    |
+| Reverse flight     | ☐    |
+| Lateral flight     | ☐    |
+| Controlled climb   | ☐    |
+| Controlled descent | ☐    |
+| Yaw response       | ☐    |
+
+---
+
+# 8. Return-To-Launch (RTL)
+
+Acceptance Criteria
+
+☐ RTL initiated correctly
+
+☐ Aircraft returns toward launch point
+
+☐ Safe descent
+
+☐ Controlled landing
+
+☐ Motors disarm correctly
+
+Landing Accuracy (optional):
+
+___________ metres
+
+---
+
+# 9. Battery Verification
+
+Battery Voltage Before Flight:
+
+---
+
+Battery Voltage After Flight:
+
+---
+
+Acceptance Criteria
+
+☐ Battery telemetry accurate
+
+☐ Low battery warnings function
+
+☐ Voltage remains within expected limits
+
+---
+
+# 10. Thermal Inspection
+
+Immediately after landing inspect:
+
+| Component         | Status       |
+| ----------------- | ------------ |
+| Flight Controller | ☐ Acceptable |
+| ESC               | ☐ Acceptable |
+| Motors            | ☐ Acceptable |
+| Battery           | ☐ Acceptable |
+| Payload           | ☐ Acceptable |
+
+Observed temperatures (optional):
+
+FC:
+
+________ °C
+
+ESC:
+
+________ °C
+
+Motor:
+
+________ °C
+
+Battery:
+
+________ °C
+
+Notes:
+
+---
+
+---
+
+# 11. Flight Log Review
+
+Confirm:
+
+☐ Flight log recorded
+
+☐ No estimator failures
+
+☐ No vibration warnings
+
+☐ No GPS faults
+
+☐ No EKF resets
+
+☐ No unexpected failsafes
+
+---
+
+# 12. Post-Flight Inspection
+
+Verify:
+
+☐ No loose hardware
+
+☐ No cracked frame components
+
+☐ Wiring intact
+
+☐ Propellers undamaged
+
+☐ Motors rotate freely
+
+☐ Battery secure
+
+---
+
+# Test Summary
+
+| Test Section       | Pass |
+| ------------------ | ---- |
+| Pre-flight         | ☐    |
+| Power-on           | ☐    |
+| GPS                | ☐    |
+| Hover              | ☐    |
+| Position Hold      | ☐    |
+| Flight Performance | ☐    |
+| RTL                | ☐    |
+| Thermal            | ☐    |
+| Flight Logs        | ☐    |
+| Post-flight        | ☐    |
+
+---
+
+# Final Disposition
+
+☐ Accepted for operational use
+
+☐ Accepted with documented limitations
+
+☐ Requires corrective action
+
+☐ Re-test required
+
+---
+
+# Corrective Actions
+
+---
+
+---
+
+---
+
+---
+
+# Sign-Off
+
+**Technician**
+
+Name:
+
+---
+
+Signature:
+
+---
+
+Date:
+
+---
+
+---
+
+**Engineering Review (Optional)**
+
+Name:
+
+---
+
+Signature:
+
+---
+
+Date:
+
+---
